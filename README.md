@@ -86,10 +86,6 @@ Demora vt interrupciones del VDP antes de continuar.
 
 En el directorio `examples` hay 3 programas de prueba:
 
-* mt: Es el problema de los molinetes (turnstiles) donde varios procesos incrementan una variable compartida y se produce una condición de carrera (race condition). Por lo que se pierden conteos, a menos que se serialice la zona crítica, es decir, el incremento de la variable compartida, utilizando semáforos mutex (semáforos con valor 1).
-* shell: Un pequeño shell que permite ejecutar programas hardcodeados en segundo plano.
-* counters: 10 threads contando en simultaneo y mostrando el resultado en pantalla.
-
-### Ejemplo de 10 threads contando en paralelo
-
-![animacion-counters](https://user-images.githubusercontent.com/75378876/175799823-bc439b97-0772-4bcb-8d2a-161d64a35aea.gif)
+* ***mt***: Es el problema de los molinetes (turnstiles) donde varios procesos incrementan una variable compartida y se produce una condición de carrera (race condition). Por lo que se pierden conteos, a menos que se serialice la zona crítica, es decir, el incremento de la variable compartida, utilizando semáforos mutex (semáforos con valor 1).
+* ***shell***: Un pequeño shell que permite ejecutar programas hardcodeados en segundo plano.
+* ***counters***: 10 threads contando en simultaneo y mostrando el resultado en pantalla.

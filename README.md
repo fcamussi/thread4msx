@@ -2,7 +2,7 @@
 
 Librería para programar threads en C para MSX.
 
-En principio se trata de una prueba de concepto, simplemente quería implementar multitarea preemptiva en mi computadora MSX y probar algunos problemas típicos de sistemas operativos.
+En principio se trata de una prueba de concepto, simplemente quería implementar multitarea apropiativa (preemptive multitasking) en mi computadora MSX y probar algunos problemas típicos de sistemas operativos.
 
 <img src="https://user-images.githubusercontent.com/75378876/175836223-fd2382e8-baa6-4956-8315-03707f2345bc.gif" alt="animacion-counters" width="600">
 

@@ -1,6 +1,6 @@
 # thread4msx
 
-Librería para programar threads en C para MSX, programada en C y ensamblador de Z80.
+Librería para programar threads en C para MSX.
 
 En principio se trata de una prueba de concepto, simplemente quería implementar multitarea en mi computadora MSX y probar algunos problemas típicos de sistemas operativos.
 

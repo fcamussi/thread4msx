@@ -117,7 +117,7 @@ make
 
 ### Ejecución
 
-Por ejemplo para ejecutar el programa shell, tipiamos en BASIC:
+Por ejemplo para ejecutar el programa shell, tipiamos en MSX-BASIC:
 ```
 bload "shell.msx",r
 ```

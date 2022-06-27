@@ -9,7 +9,7 @@ En principio se trata de una prueba de concepto, simplemente quería implementar
 ## Requisitos
 
 * Compilador SDCC versión 3.4.0
-* MSX-DOS (para la ejecución)
+* Una computadora MSX o un emulador para la ejecución
 
 ## Funciones y primitivas
 

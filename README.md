@@ -6,6 +6,11 @@ En principio se trata de una prueba de concepto, simplemente quería implementar
 
 <img src="https://user-images.githubusercontent.com/75378876/175836223-fd2382e8-baa6-4956-8315-03707f2345bc.gif" alt="animacion-counters" width="600">
 
+## Requisitos
+
+* Compilador SDCC versión 3.4.0
+* MSX-DOS (para la ejecución)
+
 ## Funciones y primitivas
 
 A continuación se detallan las funciones y primitivas implementadas, tanto para el manejo de threads como de semáforos para sincronización entre threads.
@@ -88,6 +93,31 @@ Duerme el thread actual durante vt interrupciones del VDP.
 
 En el directorio `examples` hay 3 programas de prueba:
 
+* ***counters***: 10 threads contando en simultaneo y mostrando el resultado en pantalla.
 * ***mt***: Es el problema de los molinetes (turnstiles) donde varios procesos incrementan una variable compartida y se produce una condición de competencia (race condition), por lo que se pierden conteos. A menos que se serialice la zona crítica, es decir, el incremento de la variable compartida, utilizando semáforos mutex (semáforos con valor 1).
 * ***shell***: Un pequeño shell que permite ejecutar programas hardcodeados en segundo plano.
-* ***counters***: 10 threads contando en simultaneo y mostrando el resultado en pantalla.
+
+### Compilación
+
+Descargar SDCC versión 3.4.0 y descomprimir. Luego, supondiendo que $SDCC_DIR contiene la ruta donde se descomprimió SDCC, tipear:
+
+```
+export PATH=$PATH:$SDCC_DIR/bin:$SDCC_DIR/share
+cd backend
+make
+cd ../thread
+make
+cd ../examples/counters
+make
+cd ../mt
+make
+cd ../shell
+make
+```
+
+### Ejecución
+
+Por ejemplo para ejecutar el shell tipiamos
+```
+bload "shell.msx",r
+```

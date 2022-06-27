@@ -81,7 +81,7 @@ Si hay algún thread en la cola del semáforo lo remueve de la cola y lo prepara
 ```
 void delay(uint32_t vt);
 ```
-Demora vt interrupciones del VDP antes de continuar.
+Duerme el thread actual durante vt interrupciones del VDP.
 
 
 ## Ejemplos
